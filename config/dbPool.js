@@ -1,6 +1,9 @@
 const mysql = require('mysql2');
 const config = require('./dbConfig');
 
-const pool = mysql.createPool(config).promise();
-
-module.exports = pool;
+module.exports.codeDictionary = mysql
+  .createPool(config.codeDictionary)
+  .promise();
+module.exports.englishTrainer = mysql
+  .createPool(config.englishTrainer)
+  .promise();
