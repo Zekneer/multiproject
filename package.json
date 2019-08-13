@@ -9,12 +9,32 @@
     "pug": "^2.0.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "browser-sync": "^2.26.7",
-    "gulp-nodemon": "^2.4.2"
+    "browserify": "^16.5.0",
+    "del": "^5.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulplog": "^1.0.0",
+    "scss-resets": "^0.2.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "dev": "gulp dev",
+    "serve": "gulp serve",
+    "build": "gulp build",
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
