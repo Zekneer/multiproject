@@ -1,17 +1,26 @@
+extends ./layouts/mainLayout.pug
+
 block title
+  <title>Table Of Content</title>
 
 block styles
+  <link rel="stylesheet" type="text/css" href="/public/tableOfContent/styles/index.min.css">
 
 block scripts
+  <script src="/public/tableOfContent/scripts/index.js" defer></script>
 
 block content
-  <h1>Table of content</h1>
-  <nav>
-    <ul>
-      <li><a href="/codeDictionary">Code Dictionary</a></li>
-      <li><a href="/englishTrainer">English Trainer</a></li>
-      <li><a href="/toDo">To Do</a></li>
-      <li><a href="/wallet">Wallet</a></li>
-      <li><a href="/mediaList">Media List</a></li>
-    </ul>
-  </nav>
+  <div class="main">
+    <div class="main__inner">
+      <h1 class="chapter main__chapter">Table of content</h1>
+      <nav class="menu main__menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="/codeDictionary">Code Dictionary</a></li>
+          <li class="menu__item"><a class="menu__link menu__link_inactive" href="/englishTrainer">English Trainer (in progress)</a></li>
+          <li class="menu__item"><a class="menu__link menu__link_inactive" href="/toDo">To Do (in progress)</a></li>
+          <li class="menu__item"><a class="menu__link menu__link_inactive" href="/wallet">Wallet (in progress)</a></li>
+          <li class="menu__item"><a class="menu__link menu__link_inactive" href="/mediaList">Media List (in progress)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
