@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="/public/codeDictionary/scripts/adminCreate.js" defer></script>
+
+  style.
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+</head>
+
+<body>
+  <ul>
+    each chapter in chapters
+      <li><a href="/codeDictionary/admin/edit/#{chapter.chapter_id}/chapter">#{chapter.chapter_title}</a></li>
+  </ul>
+
+  <form class="theme" name="chapter">
+    <label>Title</label>
+    <input type="text" name="chapterTitle">
+    <label>Spec</label>
+    <input type="text" name="chapterSpec">
+    <label>Text</label>
+    <textarea cols="30" rows="30" name="chapterText"></textarea>
+    <label>HTML</label>
+    <textarea cols="30" rows="30" name="chapterHtml"></textarea>
+    <label>CSS</label>
+    <textarea cols="30" rows="30" name="chapterCss"></textarea>
+    <label>JS</label>
+    <textarea cols="30" rows="30" name="chapterJs"></textarea>
+    <input type="button" value="Create chapter" name="chapterCreate">
+  </form>
+
+  <div class="serve__output"></div>
+</body>
+
+</html>

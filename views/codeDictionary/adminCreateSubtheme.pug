@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="/public/codeDictionary/scripts/adminCreate.js" defer></script>
+</head>
+
+<body>
+  <ul>
+    each subtheme in subthemes
+      <li><a href="/codeDictionary/admin/create/#{subtheme.subtheme_id}/section">#{subtheme.subtheme_name}</a></li>
+  </ul>
+
+  <form class="theme" name="subtheme">
+    <input type="text" name="subthemeName">
+    <input type="button" value="Create subtheme" name="subthemeCreate">
+  </form>
+
+  <div class="serve__output"></div>
+</body>
+
+</html>

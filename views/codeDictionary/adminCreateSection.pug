@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="/public/codeDictionary/scripts/adminCreate.js" defer></script>
+</head>
+
+<body>
+  <ul>
+    each section in sections
+      <li><a href="/codeDictionary/admin/create/#{section.section_id}/chapter">#{section.section_name}</a></li>
+  </ul>
+
+  <form class="theme" name="section">
+    <input type="text" name="sectionName">
+    <input type="button" value="Create section" name="sectionCreate">
+  </form>
+
+  <div class="serve__output"></div>
+</body>
+
+</html>
