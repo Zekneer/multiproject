@@ -39,7 +39,4 @@ function logErr(errMsg) {
   });
 }
 
-logErr('First Error');
-logErr('Second Error');
-
 module.exports = logErr;
