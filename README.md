@@ -6,11 +6,23 @@
   - Node.js
   - Express
   - MySQL
+  - PUG
 - Client
   - HTML (with PUG templates)
   - SCSS
   - Vanilla JS
   - GULP (for frontend bundle)
+  
+## Project structure
+
+config - for configuration files, like database configuration object, general error logger;
+app.js - start file, route requests to routers;
+routes, controllers, models - MVC pattern parts;
+views - pug templates;
+src - frontend sources ('gulp dev' create a 'static' folder with static compiled content from src like img, .css, .js);
+
+P.S.: On this moment almoust all useful code is in codeDictionary subfolders.
+
 
 ## Code dictionary part
 Beta version available at url http://zekneeue.beget.tech/codeDictionary
