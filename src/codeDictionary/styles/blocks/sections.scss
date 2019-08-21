@@ -1,0 +1,28 @@
+.sections {
+  background-color: $color-bg-sections;
+  color: $color-font-bg-main;
+  padding: 0 5px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+
+    &_active {
+      background-color: $color-bg-main-hover;
+    }
+
+    &:hover {
+      background-color: $color-bg-main-hover;
+    }
+  }
+}

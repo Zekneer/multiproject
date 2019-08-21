@@ -4,6 +4,8 @@
   "description": "My own learning project",
   "main": "app.js",
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "basic-auth": "^2.0.1",
     "express": "^4.17.1",
     "mysql2": "^1.6.5",
     "pug": "^2.0.4"
@@ -17,6 +19,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.0.0",
     "gulp-nodemon": "^2.4.2",
     "gulp-rename": "^1.4.0",
@@ -40,6 +43,6 @@
   "author": "",
   "license": "ISC",
   "browserslist": [
-    "> 0.1%"
+    "last 2 versions"
   ]
 }

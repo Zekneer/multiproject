@@ -1,0 +1,12 @@
+.header {
+  min-height: $header-height-lg;
+
+  &__inner {
+    min-height: inherit;
+    display: flex;
+  }
+
+  &__sections {
+    flex-grow: 1;
+  }
+}

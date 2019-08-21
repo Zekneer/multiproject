@@ -1,0 +1,12 @@
+.bottom-navbar {
+  min-width: $right-panel-width;
+  background-color: $color-bg-main;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__version {
+    color: $color-font-bg-main;
+  }
+}

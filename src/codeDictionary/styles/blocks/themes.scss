@@ -1,0 +1,46 @@
+.themes {
+  @include font(1.2em, normal, $color-font-bg-main);
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+
+    .subthemes {
+      display: none;
+    }
+
+    &:not(.themes__item_active) .themes__title:hover {
+      background-color: $color-bg-main-hover;
+    }
+
+    &_opened .themes__title {
+      background-color: $color-bg-theme-active;
+      box-shadow: 3px 0 0 0 $color-bg-light inset;
+    }
+
+    &_opened .subthemes {
+      display: block;
+    }
+
+    &_opened .themes__icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__title {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    svg {
+      fill: $color-font-bg-main;
+    }
+  }
+
+  &__icon {
+    width: 0.4em;
+    height: auto;
+    transition: all 0.2s;
+  }
+}

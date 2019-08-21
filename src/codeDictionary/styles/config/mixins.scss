@@ -1,0 +1,27 @@
+@mixin link($linkColor, $hover, $active, $visited) {
+  color: $linkColor;
+
+  &:hover {
+    color: darken($linkColor, 20%);
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  &:visited {
+    color: $visited;
+  }
+}
+
+@mixin font(
+  $fontSize: 1em,
+  $fontWeight: normal,
+  $fontColor: $color-font,
+  $fontFamily: inherit
+) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $fontColor;
+}

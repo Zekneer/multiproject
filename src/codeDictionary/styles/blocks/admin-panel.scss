@@ -1,0 +1,32 @@
+.admin-panel {
+  background-color: $color-bg-admin-panel;
+  min-width: $admin-panel-width;
+  border-left: 3px solid $color-bg-light;
+  min-height: inherit;
+
+  &__inner {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      background-color: $color-bg-main-hover;
+    }
+  }
+
+  &__entry-point {
+    display: inline;
+    @include font(1em, normal, $color-font-bg-main);
+  }
+
+  &__panel {
+    display: none;
+
+    &_showed {
+      display: block;
+    }
+  }
+}

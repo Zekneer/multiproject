@@ -1,0 +1,58 @@
+.theory {
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    min-height: 100px;
+    max-height: 100px;
+    padding: 5px;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: auto;
+
+    background-color: $color-bg-chapter-text;
+
+    &_full {
+      max-height: none;
+    }
+
+    &::-webkit-scrollbar {
+      width: 1em;
+    }
+    
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-bg-main;
+      outline: 1px solid slategrey;
+    }
+  
+  }
+  
+  &__more {
+    background-color: $color-bg-main;
+    order: 1;
+
+    svg {
+      fill: $color-font-bg-main;
+      transition: transform 0.2s linear;
+    }
+
+    &_pressed {
+      svg {
+        transform: rotate(180deg);
+      }
+
+      & ~ .theory__text {
+        max-height: none;
+      }
+    }
+
+    &_hidden {
+      display: none;
+    }
+  }
+}

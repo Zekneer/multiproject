@@ -1,0 +1,114 @@
+.example {
+  &__more {
+    background-color: $color-bg-dark;
+    margin-top: 10px;
+
+    svg {
+      fill: $color-font-bg-main;
+    }
+
+    &_pressed {
+      svg {
+        transform: rotate(180deg);
+      }
+
+      & ~ .example__content {
+        display: block;
+      }
+    }
+  }
+
+  &__browser {
+    margin-bottom: 10px;
+  }
+
+  &__tab {
+    cursor: pointer;
+    float: left;
+    display: block;
+    padding: 5px 20px;
+    background-color: $color-bg-main;
+    color: $color-font-bg-main;
+    
+    &:not(.example__tab_active):hover {
+      background-color: $color-bg-main-hover;
+    }
+
+    &_active {
+      background-color: $color-bg-dark;
+			color: $color-font-bg-main;
+    }
+  }
+
+  &__pad {
+    display: none;		
+    border-top: 5px solid $color-bg-dark;
+
+    &_visible {
+      display: block;
+    }
+
+    pre {
+      padding: 5px;
+    }
+
+    &[data-name="view"] {
+      background-color: #fff;
+      padding: 5px;
+    }
+  }
+  
+  &__pads {
+    clear: both;
+  }
+
+  &__code-text pre {
+    padding: 5px;
+  }
+
+  &__code-console {
+    min-height: 20px;
+    background-color: rgb(39, 37, 37);
+    color: $color-font-bg-main;
+    box-shadow: 0 0 2px 1px rgb(27, 26, 26) inset;
+    padding: 3px; 
+    white-space: pre-wrap;
+  }
+
+  &__content {
+    display: none;
+    margin-top: 10px;
+  }
+
+  &__code-buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__code-start {
+    background-color: $color-bg-main;
+    flex-grow: 1;
+
+    &:hover {
+      background-color: $color-bg-main-hover;
+    }
+
+    svg {
+      fill: $color-font-bg-main;
+    }
+  }
+
+  &__code-reload {
+    background-color: $color-bg-main;
+    flex-grow: 1;
+
+    &:hover {
+      background-color: $color-bg-main-hover;
+    }
+
+    svg {
+      fill: $color-font-bg-main;
+    }
+  }
+}

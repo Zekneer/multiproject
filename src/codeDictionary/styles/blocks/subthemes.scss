@@ -1,0 +1,29 @@
+.subthemes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include font(0.7em, normal, white);
+  background-color: $color-bg-subtheme-active;
+  box-shadow: 3px 0 0 0 $color-bg-light inset;
+
+  &__item {
+
+    &:hover {
+      background-color: $color-bg-light;
+    }
+
+    &_active {
+      background-color: $color-bg-light;
+    }
+  }
+
+  &__link {
+    padding: 5px 5px 5px 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

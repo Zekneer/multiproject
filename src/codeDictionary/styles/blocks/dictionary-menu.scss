@@ -1,0 +1,10 @@
+.dictionary-menu {
+  background-color: $color-bg-main;
+  min-width: $right-panel-width;
+  @include font(1.2em, normal, $color-font-bg-main);
+  transition: margin-left 0.5s;
+
+  &_closed {
+    margin-left: -#{$right-panel-width};
+  }
+}

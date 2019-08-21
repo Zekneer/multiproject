@@ -1,0 +1,36 @@
+.chapter {
+  margin: 10px;
+  min-width: 400px;
+  max-width: 600px;
+
+  padding: 10px;
+
+  background-color: $color-bg-chapter;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    @include font(1.5em, bold, $color-font-bg-main);
+    white-space: pre-wrap;
+  }
+
+  &__spec-link {
+    svg {
+      width: 20px;
+      height: auto;
+      fill: $color-font-bg-main;
+    }
+  }
+}

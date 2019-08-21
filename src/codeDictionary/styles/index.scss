@@ -1,0 +1,58 @@
+@import 'normalize.scss';
+@import './config/prism.scss';
+@import './config/fonts.scss';
+@import './config/variables.scss';
+@import './config/mixins.scss';
+
+@import './blocks/button-icon.scss';
+
+// === common ===
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include font($font-size-lg, normal, $color-font, $font-main);
+  background-color: $color-bg;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// === / common ===
+
+// === page ===
+@import './blocks/page.scss';
+  // === header ===
+  @import './blocks/header.scss';
+    @import './blocks/navbar.scss';
+    @import './blocks/sections.scss';
+    @import './blocks/admin-panel.scss';
+
+  // === main ===
+  @import './blocks/main.scss';
+    @import './blocks/dictionary-menu.scss';
+      @import './blocks/themes.scss';
+      @import './blocks/subthemes.scss';
+    @import './blocks/content.scss';
+      @import './blocks/chapter.scss';
+        @import './blocks/theory.scss';
+        @import './blocks/example.scss';
+
+  // === footer ===
+  @import './blocks/footer.scss';
+    @import './blocks/bottom-navbar.scss';
+    @import './blocks/contacts.scss';
+// === /page ===
